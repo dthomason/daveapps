@@ -7,7 +7,6 @@ import jsIcon from "../../assets/js-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
-import vueIcon from "../../assets/vue-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 export function About() {
@@ -38,12 +37,6 @@ export function About() {
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
               <img src={reactIcon} alt="React" />
-            </ScrollAnimation>
-          </div>
-
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-              <img src={vueIcon} alt="Vue" />
             </ScrollAnimation>
           </div>
 
@@ -79,10 +72,7 @@ export function About() {
       </div>
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.6 * 1000}>
-          <img
-            src={require("../../assets/me_with_stick.jpeg")}
-            alt="Image of Me"
-          />
+          <img src={require("../../assets/pro_self.png")} alt="Image of Me" />
         </ScrollAnimation>
       </div>
     </Container>

@@ -1,7 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { Container } from "./styles";
 import ScrollAnimation from "react-animate-on-scroll";
-import Me from "../../assets/svg_me.svg";
 import { NavHashLink } from "react-router-hash-link";
 
 export function Intro() {
@@ -34,7 +33,7 @@ export function Intro() {
       </div>
       <div className="intro-image">
         <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img src={require("../../assets/dave_pose.png")} alt="Me" />
+          <img src={require("../../assets/app.png")} alt="Me" />
         </ScrollAnimation>
       </div>
     </Container>

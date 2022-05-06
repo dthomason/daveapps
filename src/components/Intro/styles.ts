@@ -37,6 +37,7 @@ export const Container = styled.section`
 
   @media (max-width: 960px) {
     display: block;
+    flex-direction: column;
     margin-top: 15%;
     .intro-text {
       h1 {

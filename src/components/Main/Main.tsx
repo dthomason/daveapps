@@ -5,7 +5,6 @@ import { About } from "../About/About";
 import { Contact } from "../Contact/Contact";
 import { Portfolio } from "../Portfolio/Portfolio";
 
-// TODO: make this more relevent
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import cssIcon from "../../assets/css-icon.svg";
 import htmlIcon from "../../assets/html-icon.svg";
@@ -15,8 +14,40 @@ import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import sassIcon from "../../assets/sass-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
-import vscodeIcon from "../../assets/vscode-icon.svg";
-import vueIcon from "../../assets/vue-icon.svg";
+import awsIcon from "../../assets/aws-icon.svg";
+import cypressIcon from "../../assets/cypress-icon.svg";
+import dockerIcon from "../../assets/docker-icon.svg";
+import pythonIcon from "../../assets/python-icon.svg";
+import railsIcon from "../../assets/rails-icon.svg";
+import rubyIcon from "../../assets/ruby-icon.svg";
+import kubernetesIcon from "../../assets/kubernetes-icon.svg";
+
+const iconArray = [
+  boostrapIcon,
+  cssIcon,
+  htmlIcon,
+  jsIcon,
+  mysqlIcon,
+  nodeIcon,
+  reactIcon,
+  sassIcon,
+  typescriptIcon,
+  awsIcon,
+  cypressIcon,
+  dockerIcon,
+  pythonIcon,
+  railsIcon,
+  rubyIcon,
+  kubernetesIcon,
+];
+
+const iconParticles = iconArray.map((icon) => {
+  return {
+    src: icon,
+    width: 20,
+    height: 20,
+  };
+});
 
 export function Main() {
   return (
@@ -149,63 +180,7 @@ export function Main() {
                 value: "*",
                 weight: "400",
               },
-              image: [
-                {
-                  src: boostrapIcon,
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: cssIcon,
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: htmlIcon,
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: jsIcon,
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: mysqlIcon,
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: nodeIcon,
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: reactIcon,
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: sassIcon,
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: typescriptIcon,
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: vscodeIcon,
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: vueIcon,
-                  width: 20,
-                  height: 20,
-                },
-              ],
+              image: iconParticles,
               polygon: {
                 sides: 5,
               },
