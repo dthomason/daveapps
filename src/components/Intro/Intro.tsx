@@ -8,18 +8,18 @@ export function Intro() {
     <Container id="home">
       <div className="intro-text">
         <ScrollAnimation animateIn="fadeInUp">
-          <p>You Guessed It, I'm</p>
+          <p>Hello There</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-          <h1>Dave</h1>
+          <h1>Welcome</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>Full Stack Developer</h3>
+          <h3>Back-End to Palm of Your Hand Application Development</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
           <p className="small-resume">
-            From the ground floor to production ready Web and Mobile App
-            Developer.
+            <p>Whether you're just starting out and needing the infrastructure built for your MVP</p>
+            <p>or a seasoned professional needing some assistance, Dave is your guy.</p>
           </p>
         </ScrollAnimation>
 
@@ -33,7 +33,7 @@ export function Intro() {
       </div>
       <div className="intro-image">
         <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img src={require("../../assets/me_trimmed.png")} alt="Me" />
+          <img src={require("../../assets/app.png")} alt="app" />
         </ScrollAnimation>
       </div>
     </Container>

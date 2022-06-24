@@ -1,6 +1,5 @@
 import { Container } from "./styles";
 
-import profileImage from "../../assets/profile-image.jpg";
 import cssIcon from "../../assets/css-icon.svg";
 import htmlIcon from "../../assets/html-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
@@ -72,7 +71,7 @@ export function About() {
       </div>
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.6 * 1000}>
-          <img src={require("../../assets/pro_self.png")} alt="Image of Me" />
+          <img src={require("../../assets/pro_self.png")} alt="Me" />
         </ScrollAnimation>
       </div>
     </Container>

@@ -5,8 +5,10 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useEffect, useState } from "react";
 import validator from "validator";
 
+const { CAPTCHA_KEY, FORM_KEY } = process.env
+
 export function Form() {
-  const [state, handleSubmit] = useForm("myyozglw");
+  const [state, handleSubmit] = useForm(FORM_KEY || '123');
 
   const [validEmail, setValidEmail] = useState(false);
   const [isHuman, setIsHuman] = useState(false);
@@ -20,8 +22,11 @@ export function Form() {
     }
   }
 
+
+
   useEffect(() => {
     if (state.succeeded) {
+      console.log('SUCCEEDED')
       toast.success(
         "Message was delivered, Dave will be getting in touch soon",
         {
@@ -33,7 +38,7 @@ export function Form() {
         }
       );
     }
-  });
+  }, [state]);
   if (state.succeeded) {
     return (
       <ContainerSucces>
@@ -67,7 +72,6 @@ export function Form() {
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <textarea
           required
-          placeholder="Failed"
           id="message"
           name="message"
           onChange={(e) => {
@@ -80,8 +84,7 @@ export function Form() {
           errors={state.errors}
         />
         <ReCAPTCHA
-          //TODO: see about this
-          sitekey="6LcAu-IdAAAAAJOTI5E_eRltZNQCvukIl2-f1glQ"
+          sitekey={CAPTCHA_KEY || '123'}
           onChange={(e) => {
             setIsHuman(true);
           }}

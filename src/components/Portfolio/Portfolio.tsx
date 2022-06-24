@@ -6,7 +6,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 export function Portfolio() {
   return (
     <Container id="portfolio">
-      <h2>What Dave Does</h2>
+      <h2>Previous Projects</h2>
 
       <div className="projects">
         <ScrollAnimation animateIn="flipInX">
