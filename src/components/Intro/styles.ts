@@ -29,19 +29,75 @@ export const Container = styled.section`
     padding: 1.4rem 6rem;
   }
 
+  .contact-button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .description {
+    flex-direction: row;
+
+  }
+
+  .device-support {
+    display: flex;
+    flex-direction: 'row';
+    width: 200px;
+
+  }
+
   .intro-image {
     img {
       max-width: 500px;
     }
   }
 
+  .slide-img {
+    width: 400px;
+    height: 400px;
+  }
+
+  div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 140px;
+    margin: 20px;
+  }
+
+  img {
+      padding: 8px;
+      width: 96px;
+      height: 96px;
+  }
+
+  .caption {
+      display: block;
+  }
+
   @media (max-width: 960px) {
     display: block;
-    flex-direction: column;
     margin-top: 15%;
+
+    .contact-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
     .intro-text {
+      p {
+        text-align: center;
+      }
       h1 {
         font-size: 5rem;
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
       }
     }
 

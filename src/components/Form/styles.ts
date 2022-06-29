@@ -41,13 +41,13 @@ export const Container = styled.div`
       padding: 1rem 6rem;
       text-transform: uppercase;
     }
-  
+
   }
 
   @media (max-width: 740px){
     form{
       width: 100%;
-      
+
       input,textarea{
         width: 100%;
       }
@@ -56,7 +56,7 @@ export const Container = styled.div`
 `
 
 
-export const ContainerSucces = styled.div`
+export const ContainerSuccess = styled.div`
   margin-top: 10rem;
   text-align: center;
 

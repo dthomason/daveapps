@@ -3,39 +3,25 @@ import { Container } from "./styles";
 import { Intro } from "../Intro/Intro";
 import { About } from "../About/About";
 import { Contact } from "../Contact/Contact";
-import { Portfolio } from "../Portfolio/Portfolio";
+import { Projects } from "../Projects/Projects";
 
-import boostrapIcon from "../../assets/bootstrap-icon.svg";
-import cssIcon from "../../assets/css-icon.svg";
-import htmlIcon from "../../assets/html-icon.svg";
-import jsIcon from "../../assets/js-icon.svg";
-import mysqlIcon from "../../assets/mysql-icon.svg";
-import nodeIcon from "../../assets/node-icon.svg";
-import reactIcon from "../../assets/react-icon.svg";
-import sassIcon from "../../assets/sass-icon.svg";
-import typescriptIcon from "../../assets/typescript-icon.svg";
-import awsIcon from "../../assets/aws-icon.svg";
-import cypressIcon from "../../assets/cypress-icon.svg";
-import dockerIcon from "../../assets/docker-icon.svg";
-import pythonIcon from "../../assets/python-icon.svg";
-import railsIcon from "../../assets/rails-icon.svg";
-import rubyIcon from "../../assets/ruby-icon.svg";
-import kubernetesIcon from "../../assets/kubernetes-icon.svg";
+import mysqlIcon from "../../assets/sprinkleIcons/mysql-icon.svg";
+import nodeIcon from "../../assets/sprinkleIcons/node-icon.svg";
+import reactIcon from "../../assets/sprinkleIcons/react-icon.svg";
+import typescriptIcon from "../../assets/sprinkleIcons/typescript-icon.svg";
+import cypressIcon from "../../assets/sprinkleIcons/cypress-icon.svg";
+import dockerIcon from "../../assets/sprinkleIcons/docker-icon.svg";
+import railsIcon from "../../assets/sprinkleIcons/rails-icon.svg";
+import rubyIcon from "../../assets/sprinkleIcons/ruby-icon.svg";
+import kubernetesIcon from "../../assets/sprinkleIcons/kubernetes-icon.svg";
 
 const iconArray = [
-  boostrapIcon,
-  cssIcon,
-  htmlIcon,
-  jsIcon,
   mysqlIcon,
   nodeIcon,
   reactIcon,
-  sassIcon,
   typescriptIcon,
-  awsIcon,
   cypressIcon,
   dockerIcon,
-  pythonIcon,
   railsIcon,
   rubyIcon,
   kubernetesIcon,
@@ -223,7 +209,7 @@ export function Main() {
       />
       <Intro></Intro>
       <About></About>
-      <Portfolio></Portfolio>
+      <Projects></Projects>
       <Contact></Contact>
     </Container>
   );

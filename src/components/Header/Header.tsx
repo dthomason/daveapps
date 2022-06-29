@@ -2,16 +2,17 @@ import { Container } from "./styles";
 import { BrowserRouter as Router } from "react-router-dom";
 import { NavHashLink, HashLink } from "react-router-hash-link";
 import { useState } from "react";
-
-import Resume from "../../assets/Resume_David_Thomason.pdf";
+import { useUserContext } from '../../hooks/useContext';
 
 export function Header() {
   const [isActive, setActive] = useState(false);
 
-  function toggleTheme() {
-    let html = document.getElementsByTagName("html")[0];
-    html.classList.toggle("light");
-  }
+  // function toggleTheme() {
+  //   let html = document.getElementsByTagName("html")[0];
+  //   html.classList.toggle("light");
+  // }
+
+
 
   function closeMenu() {
     setActive(false);
@@ -24,13 +25,13 @@ export function Header() {
           <span>DaveApps</span>
         </HashLink>
 
-        <input
+        {/* <input
           onChange={toggleTheme}
           className="container_toggle"
           type="checkbox"
           id="switch"
           name="mode"
-        />
+        /> */}
         <label htmlFor="switch">Toggle</label>
 
         <nav className={isActive ? "active" : ""}>
@@ -40,15 +41,15 @@ export function Header() {
           <NavHashLink smooth to="#about" onClick={closeMenu}>
             About
           </NavHashLink>
-          <NavHashLink smooth to="#portfolio" onClick={closeMenu}>
+          <NavHashLink smooth to="#projects" onClick={closeMenu}>
             Projects
           </NavHashLink>
-          <NavHashLink smooth to="#contact" onClick={closeMenu}>
+          <NavHashLink smooth to="#contact" className="button" onClick={closeMenu}>
             Contact
           </NavHashLink>
-          <a href={Resume} download className="button">
+          {/* <a href={Resume} download className="button">
             Resume
-          </a>
+          </a> */}
         </nav>
 
         <div
