@@ -209,7 +209,7 @@ export function Main() {
       />
       <Intro></Intro>
       <About></About>
-      <Projects></Projects>
+      {/* <Projects></Projects> */}
       <Contact></Contact>
     </Container>
   );

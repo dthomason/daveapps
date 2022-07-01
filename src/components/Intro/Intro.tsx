@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 import ScrollAnimation from "react-animate-on-scroll";
-import { FC, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useUserContext } from '../../hooks/useContext';
 
 const path = '../../assets/platformIcons';

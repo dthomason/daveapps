@@ -5,18 +5,13 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { Project } from './Project';
 
 export function Projects() {
-  const projectsList = [
-    {
-      targetLink: '',
-
-    }
-  ]
+  const edTechImage = require("../../assets/edtech.png")
   return (
     <Container id="projects">
-      <h2>Previous Projects</h2>
+      <h2>Projects</h2>
 
       <div className="projects">
-      <Project/>
+      <Project title={"EdTech"} description={"Empowering Teachers to Teach Kids Math"} image={edTechImage} techList={['React', 'Rails', 'Java', 'Kafka']}/>
 
 
         {/* <ScrollAnimation animateIn="flipInX">

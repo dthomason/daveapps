@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
   :root{
-    --accent: #004863;
+    --accent: #224563;
     --black: #212121;
     --green: #23ce6b;
     --blue: #016fb9;

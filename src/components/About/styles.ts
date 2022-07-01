@@ -46,10 +46,17 @@ export const Container = styled.section`
       margin-top: -4rem;
       width: 100%;
       filter: grayscale(1);
-      transition: filter 0.5s;
-      &:hover {
-        filter: grayscale(0);
-      }
+    }
+  }
+
+  .color-image {
+    text-align: center;
+    img {
+      margin-top: -4rem;
+      width: 100%;
+      filter: grayscale(1);
+      transition: filter 1s;
+      filter: grayscale(0);
     }
   }
 

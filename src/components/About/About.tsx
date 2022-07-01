@@ -8,8 +8,16 @@ import reactIcon from "../../assets/sprinkleIcons/react-icon.svg";
 import typescriptIcon from "../../assets/sprinkleIcons/typescript-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import { about } from './Copy';
+import { useEffect, useState } from 'react';
 
 export function About() {
+  const [grayscale, setGrayscale] = useState("about-image")
+
+  useEffect(() => {
+    if (grayscale === "color-image") return;
+    setTimeout(() => setGrayscale("color-image"), 2000);
+  }, []);
+
   return (
     <Container id="about">
       <div className="about-text">
@@ -77,9 +85,10 @@ export function About() {
         </ScrollAnimation>
       </div>
 
-      <div className="about-image">
+      <div className={grayscale}>
         <ScrollAnimation animateIn="fadeInRight" delay={0.6 * 1000}>
-          <img src={require("../../assets/examples/tilted.png")} alt="Me" />
+
+          <img src={require("../../assets/examples/tilted.png")} alt="Apps" />
         </ScrollAnimation>
       </div>
     </Container>

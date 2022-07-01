@@ -16,12 +16,12 @@ const UserContext = createContext<Context>(userSettings);
 
 export const UserContextProvider: FC = ({ children }) => {
   const [theme, setTheme] = useState<'light' | 'dark'>(userSettings.theme);
-  
-  const toggleThemeMode = () => {    
+
+  const toggleThemeMode = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
     let html = document.getElementsByTagName("html")[0];
     html.classList.toggle("light");
-    
+
   }
 
   const value = {

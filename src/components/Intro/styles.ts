@@ -17,6 +17,7 @@ export const Container = styled.section`
     h3 {
       color: var(--blue);
       margin: 1rem 0;
+      font-size: 2.4rem;
     }
 
     p.small-resume {
