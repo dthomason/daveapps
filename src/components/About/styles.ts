@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 12rem;
+  margin-top: 20rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -43,20 +43,20 @@ export const Container = styled.section`
   .about-image {
     text-align: center;
     img {
-      margin-top: 2rem;
+      margin-top: -4rem;
       width: 100%;
       filter: grayscale(1);
-      transition: filter 0.5s;
-      &:hover {
-        filter: grayscale(0);
-      }
     }
   }
 
-  @media only screen and (max-width: 480px) {
-    .about-image {
-      max-width: 100%;
-      margin-top: 4rem;
+  .color-image {
+    text-align: center;
+    img {
+      margin-top: -4rem;
+      width: 100%;
+      filter: grayscale(1);
+      transition: filter 1s;
+      filter: grayscale(0);
     }
   }
 
@@ -65,10 +65,75 @@ export const Container = styled.section`
     text-align: center;
 
     .about-image {
-      display: flex;
+      text-align: center;
+      img {
+        margin-top: -4rem;
+        width: 80%;
+        filter: grayscale(1);
+      }
     }
+
+    .color-image {
+      text-align: center;
+      img {
+        margin-top: 1rem;
+        width: 80%;
+        filter: grayscale(1);
+        transition: filter 1s;
+        filter: grayscale(0);
+      }
+    }
+
     .hard-skills {
       justify-content: center;
     }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .hard-skills {
+      max-width: 100%;
+      margin-top: 4rem;
+    }
+
+    .about-image {
+      text-align: center;
+      img {
+        margin-top: 1rem;
+        width: 100%;
+        filter: grayscale(1);
+      }
+    }
+
+    .color-image {
+      text-align: center;
+      img {
+        margin-top: 1rem;
+        width: 100%;
+        filter: grayscale(1);
+        transition: filter 1s;
+        filter: grayscale(0);
+      }
+    }
+  }
+
+`;
+
+export const List = styled.ul`
+  list-style: none;
+  padding: 0px 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top: 3px solid var(--accent);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
+`;
+
+export const ListItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  border-top: 1px solid var(--accent);
+  :first-of-type {
+    border-top: none;
   }
 `;

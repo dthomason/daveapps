@@ -41,7 +41,7 @@ export const Container = styled.section`
         font-weight: 500;
       }
       &:hover {
-        background-color: var(--pink);
+        background-color: var(--accent);
         a {
           color: #fff;
         }
@@ -54,7 +54,6 @@ export const Container = styled.section`
       flex-direction: column;
       div {
         width: 100%;
-        flex-direction: column;
       }
     }
   }

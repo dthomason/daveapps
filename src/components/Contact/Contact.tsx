@@ -1,20 +1,20 @@
 import { Container } from "./styles";
-import emailIcon from "../../assets/email-icon.svg";
-import phoneIcon from "../../assets/phone-icon.svg";
+import emailIcon from "../../assets/sprinkleIcons/email-icon.svg";
+import phoneIcon from "../../assets/sprinkleIcons/phone-icon.svg";
 import { Form } from "../Form/Form";
 
 export function Contact() {
   return (
     <Container id="contact">
       <header>
-        <h2>Enter your Contact me</h2>
-        <p>Hit me up if you wanna chat about apps and stuff</p>
+        <h2>Contact DaveApps</h2>
+        <p>For support related items feel free to contact us directly</p>
       </header>
       <div className="contacts">
         <div>
           <img src={emailIcon} alt="Email" />
-          <a href="mailto:dave@daveapps.app">
-            dave@daveapps.app
+          <a href="mailto:support@daveapps.app">
+            support@daveapps.app
           </a>
         </div>
         <div>

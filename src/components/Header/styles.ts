@@ -130,7 +130,7 @@ export const Container = styled.header`
   }
 
   input:checked + label {
-    background: var(--pink);
+    background: var(--accent);
   }
 
   input:checked + label:after {
@@ -168,7 +168,7 @@ export const Container = styled.header`
       background-color: var(--blue);
 
       a.button {
-        background-color: var(--pink);
+        background-color: var(--accent);
       }
 
       &.active {
