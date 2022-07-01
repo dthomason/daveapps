@@ -112,5 +112,14 @@ export const Container = styled.section`
   }
   @media (max-width: 480px) {
     margin-top: 35%;
+
+    div.item {
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 20px;
+    }
+
   }
 `;

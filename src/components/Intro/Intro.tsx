@@ -3,8 +3,6 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { useEffect, useState } from 'react';
 import { useUserContext } from '../../hooks/useContext';
 
-const path = '../../assets/platformIcons';
-
 const LIGHT = {
   apple: require('../../assets/platformIcons/apple_icon_blk.png'),
   android: require('../../assets/platformIcons/android_icon_blk.png'),
@@ -15,11 +13,6 @@ const DARK = {
   apple: require('../../assets/platformIcons/apple_icon_wt.png'),
   android: require('../../assets/platformIcons/android_icon_wt.png'),
   cross_platform: require('../../assets/platformIcons/cross_platform_wt.png')
-}
-
-interface Props {
-  name: 'apple' | 'android' | 'cross';
-  theme: 'light' | 'dark';
 }
 
 
@@ -39,7 +32,7 @@ export function Intro() {
 
   return (
     <Container id="home">
-      <div className="intro-text">
+      <div className="intro-text" style={{ alignItems: 'center', justifyContent: 'center' }}>
         <ScrollAnimation animateIn="fadeInUp">
           <p>Hello There</p>
         </ScrollAnimation>
@@ -52,15 +45,15 @@ export function Intro() {
         <ScrollAnimation animateIn="fadeInDown" delay={0.5 * 1000}>
           <div className="item">
             <h2 className="caption">IOS</h2>
-              <img src={IMAGES.apple} />
+              <img src={IMAGES.apple} alt="apple_icon" />
           </div>
           <div className="item">
             <h2 className="caption">Android</h2>
-              <img src={IMAGES.android} />
+              <img src={IMAGES.android} alt="android_icon" />
           </div>
           <div className="item">
             <h2 className="caption">Cross Platform</h2>
-              <img src={IMAGES.cross_platform} />
+              <img src={IMAGES.cross_platform} alt="cross_platform_icon" />
           </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>

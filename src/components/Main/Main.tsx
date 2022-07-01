@@ -3,7 +3,6 @@ import { Container } from "./styles";
 import { Intro } from "../Intro/Intro";
 import { About } from "../About/About";
 import { Contact } from "../Contact/Contact";
-import { Projects } from "../Projects/Projects";
 
 import mysqlIcon from "../../assets/sprinkleIcons/mysql-icon.svg";
 import nodeIcon from "../../assets/sprinkleIcons/node-icon.svg";

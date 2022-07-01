@@ -1,7 +1,7 @@
 import express from 'express'
-const app = express();
 
 const SERVER_PORT = 4000;
+const app = express();
 
 const server = app.listen(SERVER_PORT, () =>
   // eslint-disable-next-line no-console

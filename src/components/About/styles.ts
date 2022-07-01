@@ -60,24 +60,62 @@ export const Container = styled.section`
     }
   }
 
-  @media only screen and (max-width: 480px) {
-    .hard-skills {
-      max-width: 100%;
-      margin-top: 4rem;
-    }
-  }
-
   @media (max-width: 960px) {
     display: block;
     text-align: center;
 
     .about-image {
-      display: none;
+      text-align: center;
+      img {
+        margin-top: -4rem;
+        width: 80%;
+        filter: grayscale(1);
+      }
     }
+
+    .color-image {
+      text-align: center;
+      img {
+        margin-top: 1rem;
+        width: 80%;
+        filter: grayscale(1);
+        transition: filter 1s;
+        filter: grayscale(0);
+      }
+    }
+
     .hard-skills {
       justify-content: center;
     }
   }
+
+  @media only screen and (max-width: 480px) {
+    .hard-skills {
+      max-width: 100%;
+      margin-top: 4rem;
+    }
+
+    .about-image {
+      text-align: center;
+      img {
+        margin-top: 1rem;
+        width: 100%;
+        filter: grayscale(1);
+      }
+    }
+
+    .color-image {
+      text-align: center;
+      img {
+        margin-top: 1rem;
+        width: 100%;
+        filter: grayscale(1);
+        transition: filter 1s;
+        filter: grayscale(0);
+      }
+    }
+  }
+
 `;
 
 export const List = styled.ul`

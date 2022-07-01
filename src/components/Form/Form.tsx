@@ -5,17 +5,17 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useEffect, useState } from "react";
 import validator from "validator";
 
+const FORM_ID = process.env.REACT_APP_FORM_ID || process.env.FORM_ID;
+const SITE_KEY = process.env.REACT_APP_SITE_KEY || process.env.SITE_KEY;
+
 export function Form() {
-  const [state, handleSubmit] = useForm('mgedbzlj', {
+  const [state, handleSubmit] = useForm(FORM_ID || '', {
     debug: true
   });
 
   const [validEmail, setValidEmail] = useState(false);
   const [isHuman, setIsHuman] = useState(false);
   const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [company, setCompany] = useState('');
-  const [message, setMessage] = useState('');
 
 
 
@@ -68,6 +68,7 @@ export function Form() {
           id="firstName"
           type="firstName"
           name="firstName"
+          value={firstName}
           onChange={(e) => {
             setFirstName(e.target.value);
           }}
@@ -79,9 +80,6 @@ export function Form() {
           id="lastName"
           type="lastName"
           name="lastName"
-          onChange={(e) => {
-            setLastName(e.target.value);
-          }}
         />
         <input
           placeholder="Email"
@@ -92,7 +90,6 @@ export function Form() {
             verifyEmail(e.target.value);
           }}
           onInput={(e) => {
-            console.log({ e })
               toast.error({
                 position: toast.POSITION.BOTTOM_CENTER,
                 pauseOnFocusLoss: false,
@@ -109,18 +106,12 @@ export function Form() {
           id="Company"
           type="Company"
           name="Company"
-          onChange={(e) => {
-            setCompany(e.target.value);
-          }}
         />
         <textarea
           required
           placeholder="Message"
           id="message"
           name="message"
-          onChange={(e) => {
-            setMessage(e.target.value);
-          }}
         />
         <ValidationError
           prefix="Message"
@@ -128,7 +119,7 @@ export function Form() {
           errors={state.errors}
         />
         <ReCAPTCHA
-          sitekey='6LcAu-IdAAAAAJOTI5E_eRltZNQCvukIl2-f1glQ'
+          sitekey={SITE_KEY || ''}
           onChange={(e) => {
             setIsHuman(true);
           }}

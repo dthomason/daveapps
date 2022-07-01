@@ -54,7 +54,6 @@ export const Container = styled.section`
       flex-direction: column;
       div {
         width: 100%;
-        flex-direction: column;
       }
     }
   }

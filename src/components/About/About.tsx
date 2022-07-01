@@ -16,7 +16,7 @@ export function About() {
   useEffect(() => {
     if (grayscale === "color-image") return;
     setTimeout(() => setGrayscale("color-image"), 2000);
-  }, []);
+  }, [grayscale]);
 
   return (
     <Container id="about">

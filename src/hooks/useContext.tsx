@@ -1,5 +1,4 @@
-import { useState, createContext, useContext, FC, SetStateAction } from "react";
-import ReactDOM from "react-dom";
+import { useState, createContext, useContext, FC } from "react";
 
 
 interface Context {
