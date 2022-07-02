@@ -1,8 +1,8 @@
 export const about = [
-  { type: "Development Lifecycle", description: "Fast Time To Market, Production Ready M.V.P.s, Human readable code for easy handoff and maintenance" },
-  { type: "Build", description: "Continuous Deliver and Integration" },
-  { type: "Test", description: "Automated, Unit, Integration, End-To-End Using Cypress.io" },
-  { type: "Marketing", description: "Professional Design that follows Apple and Google store guidelines for easy launch" },
-  { type: "Frameworks", description: "React, React Native, Typescript, Node Js, Ruby on Rails, Cypress.io"},
+  { type: "Research", description: "Before diving into your dream project we make sure the plan is aligned to your vision and my team is setup for success" },
+  { type: "Design", description: "Fast proto-typing, unlimited iterations, flexible and progressive designs" },
+  { type: "Testing", description: "Fully automated unit, integration, and end-to-end tests for 100% confidence" },
+  { type: "Development", description: "Scrum and Agile Methodologies, transparent communication with a dedicated team, on-time M.V.P. deliverables" },
+  { type: "Release", description: "Post 'project complete' support and planning for a proper handoff.  Training in build and deploying for CI/CD available" },
 
 ]
