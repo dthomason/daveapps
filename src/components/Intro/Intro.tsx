@@ -36,7 +36,7 @@ export function Intro() {
         <ScrollAnimation animateIn="fadeInUp">
           <p>Hello There</p>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
+        <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
           <h1>Welcome</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
@@ -45,16 +45,16 @@ export function Intro() {
         <ScrollAnimation animateIn="fadeInDown" delay={0.5 * 1000}>
           <div className="item">
             <h2 className="caption">IOS</h2>
-              <img src={IMAGES.apple} alt="apple_icon" />
+              <img src={IMAGES.apple} alt="apple_icon" className="icon"/>
           </div>
           <div className="item">
             <h2 className="caption">Android</h2>
-              <img src={IMAGES.android} alt="android_icon" />
+              <img src={IMAGES.android} alt="android_icon" className="icon"/>
           </div>
           <div className="item">
             <h2 className="caption">Cross Platform</h2>
-              <img src={IMAGES.cross_platform} alt="cross_platform_icon" />
-          </div>
+                <img src={IMAGES.cross_platform} alt="cross_platform_icon" className="icon"/>
+            </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
           <p style={{fontSize: 32}}>Let's build something great together!</p>
@@ -62,9 +62,9 @@ export function Intro() {
         <ScrollAnimation animateIn="fadeInLeft" className="contact-button" delay={0.8 * 1000}>
         </ScrollAnimation>
       </div>
-      <div className="intro-image">
+      <div>
         <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" delay={1 * 1000}>
-          <img src={require("../../assets/introAnimation/background.png")} alt="interface" className="slide-img" />
+          <img src={require("../../assets/illustrations/interface.png")} alt="interface" className="right-image" />
         </ScrollAnimation>
       </div>
     </Container>

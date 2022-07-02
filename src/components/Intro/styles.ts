@@ -8,7 +8,7 @@ export const Container = styled.section`
   background: rgba(0, 0, 0, 0);
   .intro-text {
     & > p {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
     h1 {
       font-size: 7rem;
@@ -49,16 +49,10 @@ export const Container = styled.section`
 
   }
 
-  .intro-image {
-    img {
-      max-width: 500px;
-    }
+  img.right-image {
+    width: 100%
   }
 
-  .slide-img {
-    width: 400px;
-    height: 400px;
-  }
 
   div.item {
     vertical-align: top;
@@ -68,7 +62,7 @@ export const Container = styled.section`
     margin: 20px;
   }
 
-  img {
+  .icon {
       padding: 8px;
       width: 96px;
       height: 96px;
@@ -89,6 +83,11 @@ export const Container = styled.section`
       width: 100%;
     }
 
+    img.right-image {
+      margin-top: 15%;
+      width: 80%;
+    }
+
     .intro-text {
       p {
         text-align: center;
@@ -102,18 +101,35 @@ export const Container = styled.section`
       }
     }
 
-    .intro-image {
-      display: none;
-    }
   }
 
   @media (max-width: 600px) {
     margin-top: 25%;
   }
   @media (max-width: 480px) {
-    margin-top: 35%;
+    margin-top: 30%;
+
+    .intro-text {
+      p {
+        font-size: 2rem;
+        line-height: 300%;
+      }
+      h1 {
+        font-size: 5rem;
+        line-height: 200%;
+      }
+      h3 {
+        line-height: 200%;
+      }
+    }
+
+    img.right-image {
+      margin-top: 20px;
+      width: 100%;
+    }
 
     div.item {
+      margin-top: 20px;
       width: 60px;
       display: flex;
       align-items: center;
