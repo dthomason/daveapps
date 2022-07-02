@@ -142,7 +142,7 @@ export const Container = styled.header`
     transform: translateX(-100%);
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 800px) {
     padding: 1.8rem 3rem;
 
     .menu {

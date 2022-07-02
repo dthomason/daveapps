@@ -4,7 +4,7 @@ export const Container = styled.section`
   padding-top: 15%;
   display: flex;
   justify-content: space-between;
-  gap: 8rem;
+  gap: 4rem;
   background: rgba(0, 0, 0, 0);
   .intro-text {
     & > p {
@@ -18,10 +18,6 @@ export const Container = styled.section`
       color: var(--blue);
       margin: 1rem 0;
       font-size: 2.4rem;
-    }
-
-    p.small-resume {
-      margin-bottom: 5rem;
     }
   }
 
@@ -39,14 +35,6 @@ export const Container = styled.section`
 
   .description {
     flex-direction: row;
-
-  }
-
-  .device-support {
-    display: flex;
-    flex-direction: 'row';
-    width: 200px;
-
   }
 
   img.right-image {
@@ -55,17 +43,15 @@ export const Container = styled.section`
 
 
   div.item {
-    vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 140px;
+    width: 100px;
     margin: 20px;
   }
 
   .icon {
       padding: 8px;
-      width: 96px;
-      height: 96px;
+      width: 90px;
   }
 
   .caption {
@@ -73,7 +59,9 @@ export const Container = styled.section`
   }
 
   @media (max-width: 960px) {
-    display: block;
+    flex: 1;
+    display: inline-block;
+    justify-content: 'center';
     margin-top: 15%;
 
     .contact-button {
@@ -87,6 +75,16 @@ export const Container = styled.section`
       margin-top: 15%;
       width: 80%;
     }
+
+    .device-support {
+      display: flex;
+      justify-content: center;
+  }
+
+    /* div.animation {
+      display: 'flex';
+      justify-content: 'space-between';
+    } */
 
     .intro-text {
       p {
@@ -107,12 +105,12 @@ export const Container = styled.section`
     margin-top: 25%;
   }
   @media (max-width: 480px) {
-    margin-top: 30%;
+    margin-top: 20%;
 
     .intro-text {
       p {
         font-size: 2rem;
-        line-height: 300%;
+        line-height: 200%;
       }
       h1 {
         font-size: 5rem;
@@ -123,6 +121,11 @@ export const Container = styled.section`
       }
     }
 
+    .device-support {
+      display: flex;
+      justify-content: center;
+  }
+
     img.right-image {
       margin-top: 20px;
       width: 100%;
@@ -131,9 +134,7 @@ export const Container = styled.section`
     div.item {
       margin-top: 20px;
       width: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+      display: block;
       margin: 20px;
     }
 
