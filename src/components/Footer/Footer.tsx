@@ -1,7 +1,7 @@
 import { Container } from "./styles";
 
-import linkedinIcon from "../../assets/linkedin.png";
-import githubIcon from "../../assets/github.png";
+import linkedinIcon from "../../assets/socialIcons/linkedin.png";
+import githubIcon from "../../assets/socialIcons/github.png";
 
 export function Footer() {
   return (

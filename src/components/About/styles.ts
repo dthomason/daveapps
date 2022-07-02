@@ -11,7 +11,7 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 2rem;
   }
   .hability {
     display: flex;
