@@ -4,15 +4,10 @@ import { NavHashLink, HashLink } from "react-router-hash-link";
 import { useState } from "react";
 
 export function Header() {
-  const [isActive, setActive] = useState(false);
-
-  // function toggleTheme() {
-  //   let html = document.getElementsByTagName("html")[0];
-  //   html.classList.toggle("light");
-  // }
+  const[expand, setExpand] = useState(false);
 
   function closeMenu() {
-    setActive(false);
+    setExpand(false);
   }
 
   return (
@@ -22,16 +17,7 @@ export function Header() {
           <span>DaveApps</span>
         </HashLink>
 
-        {/* <input
-          onChange={toggleTheme}
-          className="container_toggle"
-          type="checkbox"
-          id="switch"
-          name="mode"
-        /> */}
-        {/* <label htmlFor="switch">Toggle</label> */}
-
-        <nav className={isActive ? "active" : ""}>
+        <nav className={expand ? 'active' : ''}>
           <NavHashLink smooth to="#home" onClick={closeMenu}>
             Home
           </NavHashLink>
@@ -41,18 +27,15 @@ export function Header() {
           <NavHashLink smooth to="#contact" onClick={closeMenu} className="button">
             Contact
           </NavHashLink>
-          {/* <a href={Resume} download className="button">
-            Resume
-          </a> */}
         </nav>
 
         <div
-          aria-expanded={isActive ? "true" : "false"}
+          aria-expanded={expand ? "true" : "false"}
           aria-haspopup="true"
-          aria-label={isActive ? "Date menu" : "Open menu"}
-          className={isActive ? "menu active" : "menu"}
+          aria-label={expand ? "Date menu" : "Open menu"}
+          className={expand ? "menu active" : "menu"}
           onClick={() => {
-            setActive(!isActive);
+            setExpand(!expand);
           }}
         ></div>
       </Router>
