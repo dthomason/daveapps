@@ -8,14 +8,12 @@ export function Contact() {
     <Container id="contact">
       <header>
         <h2>Contact DaveApps</h2>
-        <p>Email or Call.  We'd love to hear from you!</p>
+        <p>Email or Call. We'd love to hear from you!</p>
       </header>
       <div className="contacts">
         <div>
           <img src={emailIcon} alt="Email" />
-          <a href="mailto:support@daveapps.app">
-            support@daveapps.app
-          </a>
+          <a href="mailto:info@daveapps.app">info@daveapps.app</a>
         </div>
         <div>
           <img src={phoneIcon} alt="Phone" />
