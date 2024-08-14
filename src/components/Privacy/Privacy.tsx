@@ -17,23 +17,27 @@ export function Privacy() {
         </p>
         <h4>Information Collection and Use</h4>
         <p>
-          Our app utilizes the microphone and voice-to-text services solely for
-          the purpose of enhancing your user experience. We do not collect,
-          store, or transfer any data to a backend server or third parties. All
-          data is held locally on your device.
+          Our app requires access to your microphone to transcribe your voice to
+          text for the purpose of following along with your reading. While we do
+          not collect, store, or transfer any data to a backend server or third
+          parties, the app does use Apple’s speech recognition feature to
+          convert your speech to text.
         </p>
         <h4>Microphone Access</h4>
         <p>
-          We use the microphone to capture your voice commands or input. This
-          data is processed in real-time and is not stored or transmitted to any
-          external servers. The microphone access is only active while the app
-          is in use.
+          We use the microphone to capture your voice input in real-time to
+          facilitate the voice-to-text transcription needed for the app to
+          follow along with your reading. This data is not stored or transmitted
+          by us to any external servers. The microphone access is only active
+          while the app is in use.
         </p>
-        <h4>Voice-to-Text</h4>
+        <h4>Voice-to-Text and Apple’s Speech Recognition</h4>
         <p>
-          Our app uses voice-to-text technology to convert your spoken words
-          into text. This service processes your voice input locally on your
-          device. No data is stored or transmitted during this process.
+          Our app uses Apple’s speech recognition feature to convert your spoken
+          words into text. This service may send your voice data securely to
+          Apple’s servers to process and return the recognized text. The data is
+          transmitted securely and is subject to Apple’s privacy policy. We do
+          not have access to or control over this data.
         </p>
         <h4>Third-Party Services</h4>
         <p>
@@ -52,6 +56,11 @@ export function Privacy() {
         <p>
           If you have any questions or concerns about this Privacy Policy,
           please contact us at info@daveapps.app.
+        </p>
+        <h4>Acknowledgment</h4>
+        <p>
+          By using our app, you acknowledge that you have read and understood
+          this Privacy Policy and agree to its terms.
         </p>
       </div>
     </Container>
